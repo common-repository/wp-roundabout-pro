@@ -1,0 +1,72 @@
+/* simple rbt pro */
+
+.rbt-title{
+background: url(../images/img_bg2.png);
+color: #000000;
+font-family: Arial;
+font-size: 15px;
+font-weight: bold;
+margin: 0;
+position: absolute;
+width: 100%;
+display: none;
+}
+
+.rbt-content{
+background: url(../images/img_bg2.png);
+bottom: 0;
+color: #000000;
+display: none;
+font-family: Tahoma;
+font-size: 11px;
+position: absolute;
+width: 100%;
+}
+
+.rbt-title span, .rbt-content span{
+padding:4px 7px;
+display:block;
+}
+
+li.roundabout-in-focus {
+cursor: default;
+}
+
+li.roundabout-in-focus .rbt-title, li.roundabout-in-focus .rbt-content{
+display:block;
+}
+
+.boozv{
+position:absolute;
+opacity:0.1;
+filter: alpha(opacity=10);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.roundabout-moveable-item .rbtimg{
+height:100%;
+width:auto;
+margin:0 auto;
+display:block;
+}
+
+#advance, #unadvance{
+width:45px;
+height:45px;
+background: url(../images/next.png);
+display:block;
+text-indent:-999em;
+float:right;
+}
+
+#unadvance{
+background: url(../images/prev.png);
+float:left;
+}
+
+.interact{
+display:none;
+}
+
+.facade:hover .interact{
+display:block;
+}
